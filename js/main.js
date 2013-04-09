@@ -462,9 +462,9 @@ $(".toggle-title").click(function(){
 $(window).load(function(){
 	var $map = $('#map-canvas');
 	if($map.length){
-		var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+		var myLatlng = new google.maps.LatLng(-6.899161,107.577081);
 	    var mapOptions = {
-	      zoom: 4,
+	      zoom: 15,
 	      center: myLatlng,
 	      mapTypeId: google.maps.MapTypeId.ROADMAP
 	    }
