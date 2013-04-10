@@ -136,9 +136,17 @@
                         </div>
                     </div>
                 </div>
+                <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=182965465087081";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-comments" data-href="http://ashaury.com" data-width="700" data-num-posts="10"></div>
                 <!-- Comments -->
-                <div id="comments">
-                <div class="fb-comments" data-href="http://example.com" data-width="800" data-num-posts="10"></div>
+<!--                <div id="comments">
                   <ol class="commentlist">
                     <li class="comment">
                       <div>
@@ -222,6 +230,7 @@
                     </li>
                   </ol>
                 </div>
+//-->                
                 <!-- End Comments -->
                 <div id="related-articles" class="fancy-carousel">
                     <ul class="carousel">
