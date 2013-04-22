@@ -268,6 +268,7 @@ $(function(){
 				$navArrows.show();
 			},
 			speed : commonSpeed,
+			autoplay : true,
 			onBeforeChange : function( pos ) {
 				if($descriptions.eq(pos).hasClass('sb-description-light'))
 					$navArrows.addClass('sb-nav-light');
@@ -276,6 +277,7 @@ $(function(){
 
 			}
 		} );
+		
 
 		// add navigation events
 		$navArrows.children( ':first' ).on( 'click', function() {
