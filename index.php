@@ -1,0 +1,556 @@
+<?php
+include('lib.php');
+?>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+
+
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="wrapper">
+            <div id="hero" class="clearfix">
+                <div id="global-social">
+            		<a class="global-facebook" href="#">
+            		    <i class="icon-facebook"></i><span>facebook</span>
+            		</a>
+            		<a class="global-twitter" href="#">
+            		    <i class="icon-twitter"></i><span>twitter</span>
+            		</a>
+            		<a class="global-googleplus" href="#">
+            		    <i class="icon-google-plus"></i><span>google plus</span>
+            		</a>
+            		<a class="global-pinterest" href="#">
+            		    <i class="icon-pinterest"></i><span>pinterest</span>
+            		</a>
+            	</div>
+            </div>
+
+            <header id="topbar">
+                <div id="menus-wrapper" class="clearfix">
+                    <a id="logo" href="index-2.html"></a>
+                    <nav id="menu">
+                        <ul class="clearfix">
+                            <li class="first_list"><a href="index.html" class="main_menu_first main_current">home</a></li>
+<!--                            <li class="first_list"><a href="elements.html" class="main_menu_first">elements</a></li> //-->
+                            <li class="first_list"><a href="#" class="main_menu_first">gallery</a></li>
+                            <li class="first_list with_dropdown">
+                                <a href="blog.html" class="main_menu_first">Store</a>
+                                <ul>
+                                    <li class="second_list second_list_border"><a href="#" class="main_menu_second">Kemeja</a></li>
+                                    <li class="second_list second_list_border"><a href="#" class="main_menu_second">Topi</a></li>
+                                    <li class="second_list second_list_border"><a href="#" class="main_menu_second">Kaos</a></li>
+                                    <li class="second_list second_list_border"><a href="#" class="main_menu_second">Jaket</a></li><!--
+                                    <li class="second_list second_list_border"><a href="blog-audio.html" class="main_menu_second">audio blog page</a></li>
+                                    <li class="second_list second_list_border"><a href="blog-audio-cover.html" class="main_menu_second">cover audio blog page</a></li>
+                                    <li class="second_list"><a href="blog-video.html" class="main_menu_second">video blog page</a></li>
+                               //-->
+                                </ul>
+                            </li>
+                            <!--<li class="first_list"><a href="portfolio.html" class="main_menu_first">portfolio</a></li>
+                            <li class="first_list"><a href="contact.html" class="main_menu_first">contact us</a></li>//-->
+                            <li class="first_list"><a href="contact.html" class="main_menu_first">contact us</a></li>
+                        </ul>
+                    </nav>
+                    <nav id="toolbar">
+                        <form method="get" id="searchform" action="#">
+                            <a href="#" id="search-button"><i class="icon-search"></i></a>
+                            <fieldset>
+                                <input type="text" name="s" id="s">
+                            </fieldset>
+                        </form>
+                        <a href="#" id="like-button" rel="ajax/like.php"><i class="icon-heart"></i></a>
+                        <a href="#" id="fullscreen-button"><i class="icon-fullscreen"></i></a>
+                    </nav>
+                </div>
+            </header>
+            <div id="main">
+                <div id="slicebox">
+                    <ul id="sb-slider" class="sb-slider">
+                        <li>
+                            <a href="http://www.flickr.com/photos/thomasclaveirole/8261304131/" target="_blank"><img src="images/slicebox/1.jpg" alt="image1"/></a>
+                            <div class="sb-description sb-description-light">
+                                <h3><span>we serve shirts,hats,jackets production order.</span></h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/thomasclaveirole/8262331072/" target="_blank"><img src="images/slicebox/2.jpg" alt="image2"/></a>
+                            <div class="sb-description sb-description-light">
+                                <h3><span>With best printing quality</span></h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/thomasclaveirole/8196073067/" target="_blank"><img src="images/slicebox/3.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3><span>With newest technology and skill</span></h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/thomasclaveirole/8136534508/" target="_blank"><img src="images/slicebox/4.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3><span>And quality management control</span></h3>
+                            </div>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="http://www.flickr.com/photos/thomasclaveirole/8136618754/" target="_blank"><img src="images/slicebox/5.jpg" alt="image1"/></a>
+                            <div class="sb-description sb-description-light">
+                                <h3><span>Salle repeinte par Code Couleur, ancien IUFM, Nancy, 2012</span></h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/thomasclaveirole/8136578344/" target="_blank"><img src="images/slicebox/6.jpg" alt="image1"/></a>
+                            <div class="sb-description sb-description-light">
+                                <h3><span>Salle avec des graffitis, ancien IUFM, Nancy, 2012</span></h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/thomasclaveirole/8139880476/" target="_blank"><img src="images/slicebox/7.jpg" alt="image1"/></a>
+                            <div class="sb-description sb-description-light">
+                                <h3><span>Graffitis en cours de réalisation par OnOff, ancien IUFM, Nancy, 2012</span></h3>
+                            </div>
+                        </li>
+                        //-->
+                    </ul>
+
+                    <div id="nav-arrows" class="nav-arrows">
+                        <a href="#"><i class="icon-chevron-left"></i></a>
+                        <a href="#"><i class="icon-chevron-right"></i></a>
+                    </div>
+
+                </div>
+
+                <div id="home" class="group">
+                    <div id="timeline" class="col span_2_of_3">  
+<?php
+$link=koneksiku();
+		$sql="select * from produk order by prod_tgl desc ";
+		$res=mysql_query($sql,$link);
+		if($res)
+		{
+			while($data=mysql_fetch_array($res))
+			{
+?>                   
+                    <div class="timeline-item">
+                            <div class="timeline-author-date"><span><?php echo $data[prod_tgl];?></span></div>
+                            <a href="produk.php?id=<?php echo $data[prod_id];?>" class="timeline-author-link">
+                                
+                            </a>
+                            <a href="produk.php?id=<?php echo $data[prod_id];?>" class="timeline-item-link">
+                                <div class="timeline-item-content">
+                                  <!--  <div class="timeline-item-cover">
+                                        <img src="images/cover/paris.jpg" alt="paris">
+                                    </div>
+                                  //-->  
+                                    <h2><?php echo $data[prod_nama];?></h2>
+                                    <p><img src="images/produk/<?php echo $data[url];?>"></p>
+                                    <div class="timeline-item-meta"><span class="timeline-item-author">Herdi Ashaury</span>, <span class="timeline-item-comments-count">18 comments</span></div>
+                                </div>
+                            </a>
+                        </div>
+<?php
+			}
+		}
+?>                        
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-author-date"><span>16/02/2013</span></div>
+                            <a href="blog.html" class="timeline-author-link">
+                                
+                            </a>
+                            <a href="blog.html" class="timeline-item-link">
+                                <div class="timeline-item-content">
+                                  <!--  <div class="timeline-item-cover">
+                                        <img src="images/cover/paris.jpg" alt="paris">
+                                    </div>
+                                  //-->  
+                                    <h2>Topi Bulu</h2>
+                                    <p><img src="images/produk/topi/topi-bulu.jpg"></p>
+                                    <div class="timeline-item-meta"><span class="timeline-item-author">Herdi Ashaury</span>, <span class="timeline-item-comments-count">18 comments</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-author-date"><span>16/02/2013</span></div>
+                            <a href="blog.html" class="timeline-author-link">
+                                
+                            </a>
+                            <a href="blog.html" class="timeline-item-link">
+                                <div class="timeline-item-content">
+                                    <h2>Kaos, Polo Shirt, Sablon </h2>
+                                    <p><img src="images/produk/topi/basket.png"></p>
+                                    <div class="timeline-item-meta"><span class="timeline-item-author">Herdi Ashaury</span>, <span class="timeline-item-comments-count">18 comments</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-author-date"><span>16/02/2013</span></div>
+                            <a href="blog.html" class="timeline-author-link">
+                                
+                            </a>
+                            <a href="blog.html" class="timeline-item-link">
+                                <div class="timeline-item-content">
+                                    <h2>Kaos WPAP Soeharto</h2>
+                                    <p><img src="images/produk/topi/wpap-soeharto.png"></p>
+                                    <div class="timeline-item-meta"><span class="timeline-item-author">Herdi Ashaury</span>, <span class="timeline-item-comments-count">18 comments</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="sidebar" class="col span_1_of_3">
+                    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=182965465087081";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+                    <div class="fb-like" data-width="450" data-show-faces="true"></div>
+                        <div class="widget widget_search">
+                            <h3 class="widget-title">Search Product</h3>
+                            <form method="get" id="sidebar-searchform" action="#">
+                                <fieldset>
+                                    <input type="text" name="s" id="sidebar-s" placeholder="To search type and hit enter">
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="widget widget-popular">
+                            <h3 class="widget-title">Newest Product</h3>
+                            <div class="fancy-carousel">
+                                <ul class="widget-carousel">
+                                    <li>
+                                        <div class="overlay-thumb">
+                                            <img width="200" height="140" src="images/produk/topi/topi-snapback.png" alt="topi snapback">
+                                            <a class="fancy-overlay" href="#">
+                                                <h5 class="overlay-title">Topi SnapBack</h5>
+                                                <div class="overlay-icon">
+                                                    <i class="icon-share-alt"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="overlay-thumb">
+                                            <img width="200" height="140" src="images/produk/topi/basket.png" alt="Basket">
+                                            <a class="fancy-overlay" href="#">
+                                                <h5 class="overlay-title">Kaos Basket</h5>
+                                                <div class="overlay-icon">
+                                                    <i class="icon-share-alt"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="overlay-thumb">
+                                            <img width="200" height="140" src="images/produk/topi/wpap-soeharto.png" alt="WPAP">
+                                            <a class="fancy-overlay" href="#">
+                                                <h5 class="overlay-title">Kaos WPAP</h5>
+                                                <div class="overlay-icon">
+                                                    <i class="icon-share-alt"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+ <!--
+                                    <li>
+                                        <div class="overlay-thumb">
+                                            <img width="200" height="140" src="images/related/goodmorning.jpg" alt="goodmorning">
+                                            <a class="fancy-overlay" href="#">
+                                                <h5 class="overlay-title">Good Morning Wallpaper by Artcore</h5>
+                                                <div class="overlay-icon">
+                                                    <i class="icon-share-alt"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="overlay-thumb">
+                                            <img width="200" height="140" src="images/related/ilovelife.jpg" alt="ilovelife">
+                                            <a class="fancy-overlay" href="#">
+                                                <h5 class="overlay-title">I Love Life Wallpaper by Artcore</h5>
+                                                <div class="overlay-icon">
+                                                    <i class="icon-share-alt"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="overlay-thumb">
+                                            <img width="200" height="140" src="images/related/monster.jpg" alt="monster">
+                                            <a class="fancy-overlay" href="#">
+                                                <h5 class="overlay-title">Monster Wallpaper by Artcore</h5>
+                                                <div class="overlay-icon">
+                                                    <i class="icon-share-alt"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="overlay-thumb">
+                                            <img width="200" height="140" src="images/related/onlymonsters.jpg" alt="onlymonsters">
+                                            <a class="fancy-overlay" href="#">
+                                                <h5 class="overlay-title">Only Monsters Eat Meats Wallpaper by Artcore</h5>
+                                                <div class="overlay-icon">
+                                                    <i class="icon-share-alt"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="overlay-thumb">
+                                            <img width="200" height="140" src="images/related/pirate.jpg" alt="pirate">
+                                            <a class="fancy-overlay" href="#">
+                                                <h5 class="overlay-title">Pirate Wallpaper by Artcore</h5>
+                                                <div class="overlay-icon">
+                                                    <i class="icon-share-alt"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="overlay-thumb">
+                                            <img width="200" height="140" src="images/related/rocknroll.jpg" alt="rocknroll">
+                                            <a class="fancy-overlay" href="#">
+                                                <h5 class="overlay-title">Rock'n Roll Wallpaper by Artcore</h5>
+                                                <div class="overlay-icon">
+                                                    <i class="icon-share-alt"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+//-->                                    
+                                </ul>
+                                <div class="popular-nav">
+                                    <span class="prev-popular"><i class="icon-chevron-left"></i></span>
+                                    <span class="next-popular"><i class="icon-chevron-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="twitter-timeline"  href="https://twitter.com/wiratamapro"  data-widget-id="322051493182193664">Tweets by @wiratamapro</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!--
+                        <div class="widget widget-video">
+                            <h3 class="widget-title">Video widget</h3>
+                            <div class="video-wrapper">
+                                <iframe src="http://player.vimeo.com/video/30272990" width="400" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            </div>
+                        </div>
+                        <div class="widget widget-audio">
+                            <h3 class="widget-title">Audio widget</h3>
+                            <div class="audio-wrapper">
+                                <audio preload="auto" controls>
+                                    <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+                                    <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+                                    <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+                                </audio>
+                            </div>
+                        </div>
+                         <div class="widget widget-soundcloud">
+                            <h3 class="widget-title">Soundcloud widget</h3>
+                            <div class="soundcloud-wrapper">
+                                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19888930&amp;color=ea4848&amp;auto_play=false&amp;show_artwork=true"></iframe>
+                            </div>
+                        </div>
+                        <div class="widget widget-social">
+                            <h3 class="widget-title">Social widget</h3>
+                            <ul class="social-buttons-list clearfix">
+                                <li><a class="social-button" href="#"><img src="img/social/500px.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/AddThis.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Behance.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Blogger.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Deliciou.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/DeviantART.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Digg.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Dopplr.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Dribbble.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Evernote.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Facebook.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Flickr.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Forrst.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/GitHub.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Google%2b.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Grooveshark.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Instagram.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Lastfm.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/LinkedIn.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Mail.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/MySpace.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Path.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Paypal.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Picasa.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Posterous.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Reddit.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/RSS.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/ShareThis.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Skype.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Soundcloud.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Spotify.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/StumbleUpon.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Tumblr.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Twitter.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Viddler.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Vimeo.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Virb.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Windows.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/WordPress.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/YouTube.png"></a></li>
+                                <li><a class="social-button" href="#"><img src="img/social/Zerply.png"></a></li>
+                            </ul>
+                        </div>
+//-->                        
+                    </div>
+                </div>
+<!--
+                <div id="recent-work">
+                    <h2>Recent Work</h2>
+                    <ul id="portfolio-items" class="group">
+                        <li>
+                            <div class="overlay-thumb">
+                                <img width="200" height="140" src="images/related/amigo.jpg" alt="amigo">
+                                <a class="fancy-overlay" href="#">
+                                    <h5 class="overlay-title">Amigo Wallpaper by Artcore</h5>
+                                    <div class="overlay-icon">
+                                        <i class="icon-share-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay-thumb">
+                                <img width="200" height="140" src="images/related/cowboy.jpg" alt="cowboy">
+                                <a class="fancy-overlay" href="#">
+                                    <h5 class="overlay-title">Cowboy Wallpaper by Artcore</h5>
+                                    <div class="overlay-icon">
+                                        <i class="icon-share-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay-thumb">
+                                <img width="200" height="140" src="images/related/fish.jpg" alt="fish">
+                                <a class="fancy-overlay" href="#">
+                                    <h5 class="overlay-title">Fish Wallpaper by Artcore</h5>
+                                    <div class="overlay-icon">
+                                        <i class="icon-share-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay-thumb">
+                                <img width="200" height="140" src="images/related/goodmorning.jpg" alt="goodmorning">
+                                <a class="fancy-overlay" href="#">
+                                    <h5 class="overlay-title">Good Morning Wallpaper by Artcore</h5>
+                                    <div class="overlay-icon">
+                                        <i class="icon-share-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay-thumb">
+                                <img width="200" height="140" src="images/related/ilovelife.jpg" alt="ilovelife">
+                                <a class="fancy-overlay" href="#">
+                                    <h5 class="overlay-title">I Love Life Wallpaper by Artcore</h5>
+                                    <div class="overlay-icon">
+                                        <i class="icon-share-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay-thumb">
+                                <img width="200" height="140" src="images/related/monster.jpg" alt="monster">
+                                <a class="fancy-overlay" href="#">
+                                    <h5 class="overlay-title">Monster Wallpaper by Artcore</h5>
+                                    <div class="overlay-icon">
+                                        <i class="icon-share-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay-thumb">
+                                <img width="200" height="140" src="images/related/onlymonsters.jpg" alt="onlymonsters">
+                                <a class="fancy-overlay" href="#">
+                                    <h5 class="overlay-title">Only Monsters Eat Meats Wallpaper by Artcore</h5>
+                                    <div class="overlay-icon">
+                                        <i class="icon-share-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay-thumb">
+                                <img width="200" height="140" src="images/related/pirate.jpg" alt="pirate">
+                                <a class="fancy-overlay" href="#">
+                                    <h5 class="overlay-title">Pirate Wallpaper by Artcore</h5>
+                                    <div class="overlay-icon">
+                                        <i class="icon-share-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+//-->
+            
+            <footer id="footer" class="clearfix">
+                <div class="group">
+                    <div class="col span_1_of_3">
+                        <h2>Our Partner</h2>
+                        <p><img src="images/partner/wadezig.jpg"> <img src="images/partner/evil.png"> <img src="images/partner/347.jpg"></p>
+                    </div>
+                    <div class="col span_1_of_3">
+                        <h2>About</h2>
+                        <p align="justify">Wiratama Production adalah sebuah vendor yang telah berjalan sejak 2008, kami siap melayani berbagai kebutuhan untuk keperluan Clothing/Distro, Kaos Promosi, Kaos Komunitas, Seragam Kantor/Sekolah, Kemeja, Jaket, dan Berbagai Macam Topi.</p>
+                        
+                    </div>
+                    <div class="col span_1_of_3">
+                        <h2>Contact</h2>
+                        <p>
+<img src="images/icon/phone.png">083821291555 / 21D59717<br>
+<img src="images/icon/mail.png"> wiratamaproduction@gmail.com<br>
+<img src="http://opi.yahoo.com/online?u=wiratamaprobandung&amp;m=g&amp;t=2" style="margin: 5px; width:150px;" />
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        
+    </body>
+</html>

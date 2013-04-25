@@ -33,7 +33,7 @@ function delcontent(x,y)
   	}
 	switch (x){
 case 1 : {xmlhttp.open("GET","kategori_hapus.php?id="+y,true);break}
-case 2 : {xmlhttp.open("GET","fasilitas_hapus.php?id="+y,true);break}
+case 2 : {xmlhttp.open("GET","produk_hapus.php?id="+y,true);break}
 case 3 : {xmlhttp.open("GET","produk_hapus.php?id="+y,true);break}
 case 4 : {xmlhttp.open("GET","promo_hapus.php?id="+y,true);break}
 case 5 : {xmlhttp.open("GET","berita_hapus.php?id="+y,true);break}

@@ -47,7 +47,7 @@ a{
 <table width="593" align="center" >
 	<tr>
     	<td width="200"></td>
-        <th width="375"><img src="img/ban-adm.png" /> administrator site</th>
+        <th width="375"><img src="image/ban-adm.png" /> administrator site</th>
     </tr>
 	<tr class="form">
     	<td height="32"><div align="right">Username : </div></td>

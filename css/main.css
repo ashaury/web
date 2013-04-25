@@ -3179,6 +3179,10 @@ button.gamma-btn-sspause:before {
     user-select: none;
 }
 
+.timeline-item .timeline-item-content img{
+	max-width:450px;
+}
+
 
 
 /* 
