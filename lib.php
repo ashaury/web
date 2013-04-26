@@ -77,6 +77,66 @@ function koneksiku(){
 		</ul>
 
 	*/
+	
+function menu_f(){
+	?>
+    <ul class="clearfix">
+                            <li class="first_list"><a href="index.php" class="main_menu_first main_current">home</a></li>
+<!--                            <li class="first_list"><a href="elements.html" class="main_menu_first">elements</a></li> //-->
+                            <li class="first_list"><a href="#" class="main_menu_first">gallery</a></li>
+                            <li class="first_list with_dropdown">
+                                <a href="katalog.php" class="main_menu_first">Store</a>
+                                <ul>
+<?php
+		$link=koneksiku();
+		$qry_kate="select * from kategori order by kate_id desc ";
+		$res_kate=mysql_query($qry_kate,$link);
+		if($res_kate)
+		{
+			while($kate=mysql_fetch_array($res_kate))
+			{
+?>
+		<li class="second_list second_list_border"><a href="katalog.php?id=<?php echo $kate[kate_id]; ?>" class="main_menu_second"><?php echo $kate[k_nama]; ?></a></li>
+<?php
+			}
+		}
+		else
+		{
+			 echo mysql_error();
+   		}
+?>
+          </ul>
+                            </li>
+                            <!--<li class="first_list"><a href="portfolio.html" class="main_menu_first">portfolio</a></li>
+                            <li class="first_list"><a href="contact.html" class="main_menu_first">contact us</a></li>//-->
+                            <li class="first_list"><a href="contact.php" class="main_menu_first">contact us</a></li>
+                        </ul>
+    <?php
+}
+
+function section_f(){
+	?>
+     <div class="group">
+                    <div class="col span_1_of_3">
+                        <h2>Our Partner</h2>
+                        <p><img src="images/partner/wadezig.jpg"> <img src="images/partner/evil.png"> <img src="images/partner/347.jpg"></p>
+                    </div>
+                    <div class="col span_1_of_3">
+                        <h2>About</h2>
+                        <p align="justify">Wiratama Production adalah sebuah vendor yang telah berjalan sejak 2008, kami siap melayani berbagai kebutuhan untuk keperluan Clothing/Distro, Kaos Promosi, Kaos Komunitas, Seragam Kantor/Sekolah, Kemeja, Jaket, dan Berbagai Macam Topi.</p>
+                        
+                    </div>
+                    <div class="col span_1_of_3">
+                        <h2>Contact</h2>
+                        <p>
+<img src="images/icon/phone.png">083821291555 / 21D59717<br>
+<img src="images/icon/mail.png"> wiratamaproduction@gmail.com<br>
+<img src="http://opi.yahoo.com/online?u=wiratamaprobandung&amp;m=g&amp;t=2" style="margin: 5px; width:150px;" />
+                    </div>
+                </div>
+    <?php
+}
+
 function atas()
 {
 	echo"

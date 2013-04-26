@@ -1,5 +1,6 @@
 <?php
 include('lib.php');
+$link=koneksiku();
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -56,27 +57,9 @@ include('lib.php');
                 <div id="menus-wrapper" class="clearfix">
                     <a id="logo" href="index-2.html"></a>
                     <nav id="menu">
-                        <ul class="clearfix">
-                            <li class="first_list"><a href="index.html" class="main_menu_first main_current">home</a></li>
-<!--                            <li class="first_list"><a href="elements.html" class="main_menu_first">elements</a></li> //-->
-                            <li class="first_list"><a href="#" class="main_menu_first">gallery</a></li>
-                            <li class="first_list with_dropdown">
-                                <a href="blog.html" class="main_menu_first">Store</a>
-                                <ul>
-                                    <li class="second_list second_list_border"><a href="#" class="main_menu_second">Kemeja</a></li>
-                                    <li class="second_list second_list_border"><a href="#" class="main_menu_second">Topi</a></li>
-                                    <li class="second_list second_list_border"><a href="#" class="main_menu_second">Kaos</a></li>
-                                    <li class="second_list second_list_border"><a href="#" class="main_menu_second">Jaket</a></li><!--
-                                    <li class="second_list second_list_border"><a href="blog-audio.html" class="main_menu_second">audio blog page</a></li>
-                                    <li class="second_list second_list_border"><a href="blog-audio-cover.html" class="main_menu_second">cover audio blog page</a></li>
-                                    <li class="second_list"><a href="blog-video.html" class="main_menu_second">video blog page</a></li>
-                               //-->
-                                </ul>
-                            </li>
-                            <!--<li class="first_list"><a href="portfolio.html" class="main_menu_first">portfolio</a></li>
-                            <li class="first_list"><a href="contact.html" class="main_menu_first">contact us</a></li>//-->
-                            <li class="first_list"><a href="contact.html" class="main_menu_first">contact us</a></li>
-                        </ul>
+                        <?php
+						menu_f();
+						?>
                     </nav>
                     <nav id="toolbar">
                         <form method="get" id="searchform" action="#">
@@ -149,7 +132,6 @@ include('lib.php');
                 <div id="home" class="group">
                     <div id="timeline" class="col span_2_of_3">  
 <?php
-$link=koneksiku();
 		$sql="select * from produk order by prod_tgl desc ";
 		$res=mysql_query($sql,$link);
 		if($res)
@@ -170,7 +152,7 @@ $link=koneksiku();
                                   //-->  
                                     <h2><?php echo $data[prod_nama];?></h2>
                                     <p><img src="images/produk/<?php echo $data[url];?>"></p>
-                                    <div class="timeline-item-meta"><span class="timeline-item-author">Herdi Ashaury</span>, <span class="timeline-item-comments-count">18 comments</span></div>
+                                    <!--<div class="timeline-item-meta"><span class="timeline-item-author">Herdi Ashaury</span>, <span class="timeline-item-comments-count">18 comments</span></div>//-->
                                 </div>
                             </a>
                         </div>
@@ -178,50 +160,7 @@ $link=koneksiku();
 			}
 		}
 ?>                        
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-author-date"><span>16/02/2013</span></div>
-                            <a href="blog.html" class="timeline-author-link">
-                                
-                            </a>
-                            <a href="blog.html" class="timeline-item-link">
-                                <div class="timeline-item-content">
-                                  <!--  <div class="timeline-item-cover">
-                                        <img src="images/cover/paris.jpg" alt="paris">
-                                    </div>
-                                  //-->  
-                                    <h2>Topi Bulu</h2>
-                                    <p><img src="images/produk/topi/topi-bulu.jpg"></p>
-                                    <div class="timeline-item-meta"><span class="timeline-item-author">Herdi Ashaury</span>, <span class="timeline-item-comments-count">18 comments</span></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-author-date"><span>16/02/2013</span></div>
-                            <a href="blog.html" class="timeline-author-link">
-                                
-                            </a>
-                            <a href="blog.html" class="timeline-item-link">
-                                <div class="timeline-item-content">
-                                    <h2>Kaos, Polo Shirt, Sablon </h2>
-                                    <p><img src="images/produk/topi/basket.png"></p>
-                                    <div class="timeline-item-meta"><span class="timeline-item-author">Herdi Ashaury</span>, <span class="timeline-item-comments-count">18 comments</span></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-author-date"><span>16/02/2013</span></div>
-                            <a href="blog.html" class="timeline-author-link">
-                                
-                            </a>
-                            <a href="blog.html" class="timeline-item-link">
-                                <div class="timeline-item-content">
-                                    <h2>Kaos WPAP Soeharto</h2>
-                                    <p><img src="images/produk/topi/wpap-soeharto.png"></p>
-                                    <div class="timeline-item-meta"><span class="timeline-item-author">Herdi Ashaury</span>, <span class="timeline-item-comments-count">18 comments</span></div>
-                                </div>
-                            </a>
-                        </div>
+
                     </div>
                     <div id="sidebar" class="col span_1_of_3">
                     <div id="fb-root"></div>
@@ -242,7 +181,7 @@ $link=koneksiku();
                             </form>
                         </div>
                         <div class="widget widget-popular">
-                            <h3 class="widget-title">Newest Product</h3>
+                            <h3 class="widget-title">Popular Product</h3>
                             <div class="fancy-carousel">
                                 <ul class="widget-carousel">
                                     <li>
@@ -525,24 +464,9 @@ $link=koneksiku();
 //-->
             
             <footer id="footer" class="clearfix">
-                <div class="group">
-                    <div class="col span_1_of_3">
-                        <h2>Our Partner</h2>
-                        <p><img src="images/partner/wadezig.jpg"> <img src="images/partner/evil.png"> <img src="images/partner/347.jpg"></p>
-                    </div>
-                    <div class="col span_1_of_3">
-                        <h2>About</h2>
-                        <p align="justify">Wiratama Production adalah sebuah vendor yang telah berjalan sejak 2008, kami siap melayani berbagai kebutuhan untuk keperluan Clothing/Distro, Kaos Promosi, Kaos Komunitas, Seragam Kantor/Sekolah, Kemeja, Jaket, dan Berbagai Macam Topi.</p>
-                        
-                    </div>
-                    <div class="col span_1_of_3">
-                        <h2>Contact</h2>
-                        <p>
-<img src="images/icon/phone.png">083821291555 / 21D59717<br>
-<img src="images/icon/mail.png"> wiratamaproduction@gmail.com<br>
-<img src="http://opi.yahoo.com/online?u=wiratamaprobandung&amp;m=g&amp;t=2" style="margin: 5px; width:150px;" />
-                    </div>
-                </div>
+               <?php
+			   section_f();
+			   ?>
             </footer>
         </div>
 
