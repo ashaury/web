@@ -1,0 +1,36 @@
+[26-Apr-2013 04:27:29 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:27:29 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:27:29 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:27:29 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:27:29 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 93
+[26-Apr-2013 04:27:29 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/index.php on line 136
+[26-Apr-2013 04:28:06 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:28:06 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:28:06 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:28:06 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:28:06 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 93
+[26-Apr-2013 04:28:06 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/index.php on line 136
+[26-Apr-2013 04:28:08 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:28:08 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:28:08 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:28:08 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:28:08 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 93
+[26-Apr-2013 04:28:08 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/index.php on line 136
+[26-Apr-2013 04:28:16 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:28:16 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:28:16 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:28:16 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:28:16 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 93
+[26-Apr-2013 04:28:16 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/index.php on line 136
+[26-Apr-2013 04:29:43 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:29:43 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:29:43 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:29:43 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:29:43 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 93
+[26-Apr-2013 04:29:43 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/index.php on line 136
+[26-Apr-2013 04:29:49 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:29:49 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:29:49 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/k3312639/public_html/wiratama/lib.php on line 59
+[26-Apr-2013 04:29:49 America/New_York] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 60
+[26-Apr-2013 04:29:49 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/lib.php on line 93
+[26-Apr-2013 04:29:49 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/k3312639/public_html/wiratama/index.php on line 136

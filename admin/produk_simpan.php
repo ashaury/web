@@ -4,6 +4,7 @@ include('sumberkekayaan.php');
 session_log();
 
 $nama=$_POST['nama'];
+$kate=$_POST['kate'];
 //$detail=nl2br($_POST['detail']);
 $harga=$_POST['harga'];
 //$tgl=$_POST['date'];
@@ -82,7 +83,7 @@ if (!$copied)
  if(isset($_POST['submit']) && !$errors) 
  {
 
-		$sqlc2="insert into produk values ('$conid','$nama','$harga',NOW( ),'$image_name')";
+		$sqlc2="insert into produk values ('$conid','$kate','$nama','$harga',NOW( ),'$image_name')";
 		$resc2=mysql_query($sqlc2,$link);
 		if($resc2)
 		header("location:produk.php");

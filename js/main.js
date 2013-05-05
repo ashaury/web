@@ -162,7 +162,7 @@ $(function(){
 		},
 		enableHover: false,
 		enableTracking: true,
-		buttons: { twitter: {via: '_JulienH'}},
+		buttons: { twitter: {via: 'wiratamapro'}},
 		click: function(api, options){
 			api.simulateClick();
 			api.openPopup('twitter');

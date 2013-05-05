@@ -46,9 +46,9 @@ function koneksiku(){
 		
 		if($is_localhost){
 			$host = "localhost"; //sesuaikan dengan setingan db kamu
-			$database ="k3417511_jajadung0102";
-			$user = "k3417511_dung";
-			$password = "6nud4jaj";
+			$database ="k3312639_wrtmdb";
+			$user = "k3312639_shaury";
+			$password = "abcde_123";
 		}
 		else{
 			$host = "localhost";
@@ -77,6 +77,7 @@ function koneksiku(){
 		</ul>
 
 	*/
+/*
 function atas()
 {
 	echo"
@@ -84,6 +85,17 @@ function atas()
     	<tr>
         <td><a href=\"home.php\">Home</a></td><td><a href=\"kategori.php\">Kategori</a></td><td><a href=\"produk.php\">Produk</a></td>
 		<td><a href=\"content.php?\">Kategori</a></td><td><a href=\"content.php?\">Tempat Wisata</a></td><td><a href=\"fasilitas.php\">Fasilitas</a></td><td><a href=\"produk.php?\">Produk</a></td><td><a href=\"promo.php?\">Promo</a></td><td><a href=\"content.php?\">Data Staff</a></td><td><a href=\"logout.php\">LogOut</a></td>
+        </tr>
+    </table>
+	";
+}
+*/
+function atas()
+{
+	echo"
+	<table id=\"navlink\">
+    	<tr>
+        <td><a href=\"home.php\">Home</a></td><td><a href=\"kategori.php\">Kategori</a></td><td><a href=\"produk.php\">Produk</a></td><td><a href=\"logout.php\">LogOut</a></td>
         </tr>
     </table>
 	";

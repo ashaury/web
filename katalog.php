@@ -60,318 +60,51 @@ include("lib.php");
 						menu_f();
 						?>
                     </nav>
-                    <nav id="toolbar">
-                        <form method="get" id="searchform" action="#">
-                            <a href="#" id="search-button"><i class="icon-search"></i></a>
-                            <fieldset>
-                                <input type="text" name="s" id="s">
-                            </fieldset>
-                        </form>
-                        <a href="#" id="like-button"><i class="icon-heart"></i></a>
-                        <a href="#" id="fullscreen-button"><i class="icon-fullscreen"></i></a>
-                    </nav>
                 </div>
             </header>
             <div id="main">
-                <div class="wrapper">
-
-                    <div class="gamma-container gamma-loading" id="gamma-container">
-
-                        <ul class="gamma-gallery">
-
-                            <li>
-                                <div data-alt="img03" data-description="<h3>coba satu deh</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/produk/1.png" data-min-width="1300"></div>
-                                    <div data-src="images/produk/1.png" data-min-width="1000"></div>
-                                    <div data-src="images/produk/1.png" data-min-width="700"></div>
-                                    <div data-src="images/produk/1.png" data-min-width="300"></div>
-                                    <div data-src="images/produk/1.png" data-min-width="200"></div>
-                                    <div data-src="images/produk/1.png" data-min-width="140"></div>
-                                    <div data-src="images/produk/1.png"></div>
-                                    <noscript>
-                                        <img src="images/produk/1.png" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                            <li>
-                                <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
-                                    <div data-src="images/gammagallery/xxxlarge/3.jpg" data-min-width="1300"></div>
-                                    <div data-src="images/gammagallery/xxlarge/3.jpg" data-min-width="1000"></div>
-                                    <div data-src="images/gammagallery/xlarge/3.jpg" data-min-width="700"></div>
-                                    <div data-src="images/gammagallery/large/3.jpg" data-min-width="300"></div>
-                                    <div data-src="images/gammagallery/medium/3.jpg" data-min-width="200"></div>
-                                    <div data-src="images/gammagallery/small/3.jpg" data-min-width="140"></div>
-                                    <div data-src="images/gammagallery/xsmall/3.jpg"></div>
-                                    <noscript>
-                                        <img src="images/gammagallery/xsmall/3.jpg" alt="img03"/>
-                                    </noscript>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <div class="gamma-overlay"></div>
-
-                    </div>
-                    
+                <div id="portfolio">
+                    <ul id="portfolio-items" class="group">
+                    <?php
+					$link=koneksiku();
+					$sql="select * from produk order by prod_tgl desc ";
+					if(isset($_GET['id']))
+					{		
+					$key=$_GET['id'];
+					$sql="select * from produk where kate_id='$key' order by prod_tgl desc";
+					}
+					$res=mysql_query($sql,$link);
+					if($res)
+					{
+						while($data=mysql_fetch_array($res))
+						{
+					?>
+                      	<li class="col span_1_of_4">
+                            <div class="overlay-thumb">
+                                <img width="200" height="140" src="images/produk/<?php echo $data[url]; ?>" alt="amigo">
+                                <a class="fancy-overlay" href="produk.php?sku=<?php echo $data[prod_id]; ?>">
+                                    <h5 class="overlay-title"><?php echo $data[prod_nama]; ?></h5>
+                                    <div class="overlay-icon">
+                                        <i class="icon-share-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    <?php
+						}
+					}
+					else
+					{
+						echo mysql_error();
+					}
+					?>
+                    </ul>
                 </div>
-
             </div>
             <footer id="footer" class="clearfix">
- 			<?php
-			section_f();
-			?>
+                <?php
+				section_f();
+				?>
             </footer>
         </div>
 

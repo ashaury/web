@@ -34,15 +34,15 @@ session_log();
     <!-- isi layar //-->
     <table id="showme" align="center" border="1px">
     	<tr>
-        <td>Gambar</td><td>Nama Barang</td><td>Harga Barang</td><td>edit</td><td>delete</td>
+        <td>Gambar</td><td>Nama Barang</td><td>Kategori</td><td>Harga Barang</td><td>edit</td><td>delete</td>
         </tr>
         <?php
 		$link=koneksiku();
-		$sql="select * from produk order by prod_tgl desc ";
+		$sql="select p.url,p.prod_nama,k.k_nama kategori,p.prod_hrg,p.prod_id from produk p,kategori k where p.kate_id=k.kate_id order by prod_tgl desc ";
 		if(isset($_POST['submit']))
 		{	
 			$key=$_POST['cari'];
-			$sql="select * from produk where prod_nama like '%$key%' order by prod_tgl desc";
+			$sql="select p.url,p.prod_nama,k.k_nama kategori,p.prod_hrg,p.prod_id from produk p,kategori k where p.kate_id=k.kate_id and p.prod_nama like '%$key%' order by prod_tgl desc";
 		}
 		$res=mysql_query($sql,$link);
 		if($res)
@@ -51,7 +51,8 @@ session_log();
 			{
 				echo"
 				<tr>
-	    	    <td><img src=\"../images/produk/$data[url]\" width=\"100\" /></td><td>$data[prod_nama]</td><td>$data[prod_hrg]</td><td><a href=\"produk_editx.php?id=$data[prod_id]\" rel=\"facebox\">[e]</a></td><td><a href=\"javascript:delcontent(2,$data[prod_id])\">[x]</a></td>
+	    	    <td><img src=\"../images/produk/$data[url]\" width=\"100\" /></td><td>$data[prod_nama]</td>
+				<td>$data[kategori]</td><td>Rp. $data[prod_hrg]</td><td><a href=\"produk_editx.php?id=$data[prod_id]\" rel=\"facebox\">[e]</a></td><td><a href=\"javascript:delcontent(2,$data[prod_id])\">[x]</a></td>
     	    	</tr>
 				";
 			}

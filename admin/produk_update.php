@@ -5,6 +5,7 @@ session_log();
 
 $update=$_POST['id'];
 $nama=$_POST['nama'];
+$kate=$_POST['kate'];
 //$detail=nl2br($_POST['detail']);
 $harga=$_POST['harga'];
 //$tgl=$_POST['date'];
@@ -78,9 +79,9 @@ if (!$copied)
  {
 	$link=koneksiku();
 	if($image_name=="")
-	$sql="UPDATE produk SET prod_nama = '$nama', prod_hrg = '$harga' WHERE prod_id ='$update'";
+	$sql="UPDATE produk SET prod_nama = '$nama', kate_id = '$kate', prod_hrg = '$harga' WHERE prod_id ='$update'";
 	else
-	$sql="UPDATE produk SET prod_nama = '$nama', prod_hrg = '$harga', url = '$image_name' WHERE acara_id ='$update'"; 
+	$sql="UPDATE produk SET prod_nama = '$nama', kate_id = '$kate', prod_hrg = '$harga', url = '$image_name' WHERE acara_id ='$update'"; 
 	
 	$res=mysql_query($sql,$link);
 	if($res)

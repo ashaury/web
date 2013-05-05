@@ -16,7 +16,7 @@ include('sumberkekayaan.php');
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>	
   
-		<title>JAJADUNG On Construction</title>
+		<title>Wiratama Production</title>
 		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 	    <script type="text/javascript" src="kode/sumberjavascript.js" ></script>
 		<link href="kode/sumbergaya.css" rel="stylesheet" /></head>

@@ -49,6 +49,27 @@ $kategori=$_REQUEST['kate'];
    		 	<tr>
     			<td><label>Nama Barang : </label></td><td><span class="w"><input type="text" id="nama" name="nama" value="<?php echo $data[prod_nama]?>"  /></span></td>
    		 	</tr>
+            <tr>
+    			<td><label>Kategori : </label></td><td><select name="kate">
+                <option value="" selected="selected" >---Pilih Kategori---</option>
+                <?php
+				$link=koneksiku();
+				$sqlkate="select * from kategori";
+				$reskate=mysql_query($sqlkate,$link);
+				if($reskate){
+					while($kate=mysql_fetch_array($reskate)){
+                	echo"
+					<option value=".$kate[kate_id]; 
+					if ($kate[kate_id]==$data[kate_id])
+					echo " selected=selected";
+					echo " >".$kate[k_nama]."</option>
+					";
+					}
+				}
+				?>
+				</select>
+                </td>
+   		 	</tr>
   		  	<tr>
    	 			<td><label>Harga Barang : </label></td><td><span class="w"><input type="text" id="harga" name="harga" value="<?php echo $data[prod_hrg]?>" /></span></td>
    		 	</tr>

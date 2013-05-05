@@ -46,9 +46,9 @@ function koneksiku(){
 		
 		if($is_localhost){
 			$host = "localhost"; //sesuaikan dengan setingan db kamu
-			$database ="k3417511_jajadung0102";
-			$user = "k3417511_dung";
-			$password = "6nud4jaj";
+			$database ="k3312639_wrtmdb";
+			$user = "k3312639_shaury";
+			$password = "abcde_123";
 		}
 		else{
 			$host = "localhost";
