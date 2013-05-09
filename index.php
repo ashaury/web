@@ -77,25 +77,25 @@ $link=koneksiku();
                 <div id="slicebox">
                     <ul id="sb-slider" class="sb-slider">
                         <li>
-                            <a href="http://www.flickr.com/photos/thomasclaveirole/8261304131/" target="_blank"><img src="images/slicebox/1.jpg" alt="image1"/></a>
+                            <a href="#" target="_blank"><img src="images/slicebox/1.jpg" alt="image1"/></a>
                             <div class="sb-description sb-description-light">
                                 <h3><span>we serve shirts,hats,jackets production order.</span></h3>
                             </div>
                         </li>
                         <li>
-                            <a href="http://www.flickr.com/photos/thomasclaveirole/8262331072/" target="_blank"><img src="images/slicebox/2.jpg" alt="image2"/></a>
+                            <a href="#" target="_blank"><img src="images/slicebox/2.jpg" alt="image2"/></a>
                             <div class="sb-description sb-description-light">
                                 <h3><span>With best printing quality</span></h3>
                             </div>
                         </li>
                         <li>
-                            <a href="http://www.flickr.com/photos/thomasclaveirole/8196073067/" target="_blank"><img src="images/slicebox/3.jpg" alt="image1"/></a>
+                            <a href="#" target="_blank"><img src="images/slicebox/3.jpg" alt="image1"/></a>
                             <div class="sb-description">
                                 <h3><span>With newest technology and skill</span></h3>
                             </div>
                         </li>
                         <li>
-                            <a href="http://www.flickr.com/photos/thomasclaveirole/8136534508/" target="_blank"><img src="images/slicebox/4.jpg" alt="image1"/></a>
+                            <a href="#" target="_blank"><img src="images/slicebox/4.jpg" alt="image1"/></a>
                             <div class="sb-description">
                                 <h3><span>And quality management control</span></h3>
                             </div>
@@ -141,10 +141,10 @@ $link=koneksiku();
 ?>                   
                     <div class="timeline-item">
                             <div class="timeline-author-date"><span><?php echo $data[prod_tgl];?></span></div>
-                            <a href="produk.php?id=<?php echo $data[prod_id];?>" class="timeline-author-link">
+                            <a href="produk.php?sku=<?php echo $data[prod_id];?>" class="timeline-author-link">
                                 
                             </a>
-                            <a href="produk.php?id=<?php echo $data[prod_id];?>" class="timeline-item-link">
+                            <a href="produk.php?sku=<?php echo $data[prod_id];?>" class="timeline-item-link">
                                 <div class="timeline-item-content">
                                   <!--  <div class="timeline-item-cover">
                                         <img src="images/cover/paris.jpg" alt="paris">

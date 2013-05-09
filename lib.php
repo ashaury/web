@@ -81,11 +81,10 @@ function koneksiku(){
 function menu_f(){
 	?>
     <ul class="clearfix">
-                            <li class="first_list"><a href="index.php" class="main_menu_first main_current">home</a></li>
+                            <li class="first_list"><a href="index.php" class="main_menu_first main_current">Home</a></li>
 <!--                            <li class="first_list"><a href="elements.html" class="main_menu_first">elements</a></li> //-->
-                            <li class="first_list"><a href="#" class="main_menu_first">gallery</a></li>
                             <li class="first_list with_dropdown">
-                                <a href="katalog.php" class="main_menu_first">Store</a>
+                                <a href="katalog.php" class="main_menu_first">Gallery</a>
                                 <ul>
 <?php
 		$link=koneksiku();
@@ -109,7 +108,8 @@ function menu_f(){
                             </li>
                             <!--<li class="first_list"><a href="portfolio.html" class="main_menu_first">portfolio</a></li>
                             <li class="first_list"><a href="contact.html" class="main_menu_first">contact us</a></li>//-->
-                            <li class="first_list"><a href="contact.php" class="main_menu_first">contact us</a></li>
+                            <li class="first_list"><a href="order.php" class="main_menu_first">Info Harga & Order</a></li>
+                            <li class="first_list"><a href="contact.php" class="main_menu_first">Contact us</a></li>
                         </ul>
     <?php
 }

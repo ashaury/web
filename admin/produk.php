@@ -34,7 +34,7 @@ session_log();
     <!-- isi layar //-->
     <table id="showme" align="center" border="1px">
     	<tr>
-        <td>Gambar</td><td>Nama Barang</td><td>Kategori</td><td>Harga Barang</td><td>edit</td><td>delete</td>
+        <td>Gambar</td><td>Nama Barang</td><td>Kategori</td><td>edit</td><td>delete</td>
         </tr>
         <?php
 		$link=koneksiku();
@@ -52,7 +52,7 @@ session_log();
 				echo"
 				<tr>
 	    	    <td><img src=\"../images/produk/$data[url]\" width=\"100\" /></td><td>$data[prod_nama]</td>
-				<td>$data[kategori]</td><td>Rp. $data[prod_hrg]</td><td><a href=\"produk_editx.php?id=$data[prod_id]\" rel=\"facebox\">[e]</a></td><td><a href=\"javascript:delcontent(2,$data[prod_id])\">[x]</a></td>
+				<td>$data[kategori]</td><td><a href=\"produk_editx.php?id=$data[prod_id]\" rel=\"facebox\">[e]</a></td><td><a href=\"javascript:delcontent(2,$data[prod_id])\">[x]</a></td>
     	    	</tr>
 				";
 			}

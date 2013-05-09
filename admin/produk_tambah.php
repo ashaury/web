@@ -26,16 +26,36 @@ $kategori=$_REQUEST['kate'];
 	  margin-right:auto;
   }
   </style>
-	<script src="dependencies/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
-	<script src="jquery.elastic.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="kode/sumberjavascript.js" ></script>
-    
+	<script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-ui-1.8.13.custom.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.8.13.custom.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- elRTE -->
+	<script src="js/elrte.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="css/elrte.min.css" type="text/css" media="screen" charset="utf-8">
+
+	<!-- elRTE translation messages -->
+	<script src="js/i18n/elrte.ru.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		$().ready(function() {
+			var opts = {
+				cssClass : 'el-rte',
+				// lang     : 'ru',
+				height   : 250,
+				toolbar  : 'complete',
+				cssfiles : ['css/elrte-inner.css']
+			}
+			$('#harga').elrte(opts);
+		})
+	</script>    
 </head>
 
 <body>
   <div id="contform">
   <form action="produk_simpan.php" method="post" enctype="multipart/form-data" onsubmit="return validasi()">
-  <table align="left">
+  <table align="left" class="edit-table">
 			<tr>
     			<td align="left" colspan="2"><h1>Tambah Produk Baru</h1></td>
   	  		</tr>
@@ -60,12 +80,13 @@ $kategori=$_REQUEST['kate'];
 				</select>
                 </td>
    		 	</tr>
-  		  	<tr>
-   	 			<td><label>Harga Barang : </label></td><td><span class="w"><input type="text"  id="harga" name="harga" /></span></td>
-   		 	</tr>
             <tr>
     			<td><label>Gambar :</label></td><td><span class="w"><input type="file" name="image" /></span></td>
   	  		</tr>
+  		  	<tr>
+   	 			<td><label>Deskripsi : </label></td><td style="width:600px;"><span class="w"><textarea  id="harga" name="harga" ></textarea></span></td>
+   		 	</tr>
+            
 <!--
             <tr>
    	 			<td><label>Overview : </label></td><td>
@@ -81,7 +102,8 @@ $kategori=$_REQUEST['kate'];
 		</table>
         </form>
   </div>
-
+<?php
+/*
   <script type="text/javascript" src="kode/jquery-1.4.3.min.js"></script>
 <script type="text/javascript" src="kode/cal.js"></script>
 <script type="text/javascript">
@@ -102,5 +124,7 @@ function validasi(){
 		
 }
 </script>
+*/
+?>
 </body>
 </html>

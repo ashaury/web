@@ -95,7 +95,7 @@ function atas()
 	echo"
 	<table id=\"navlink\">
     	<tr>
-        <td><a href=\"home.php\">Home</a></td><td><a href=\"kategori.php\">Kategori</a></td><td><a href=\"produk.php\">Produk</a></td><td><a href=\"logout.php\">LogOut</a></td>
+        <td><a href=\"home.php\">Home</a></td><td><a href=\"kategori.php\">Kategori</a></td><td><a href=\"produk.php\">Produk</a></td><td><a href=\"order.php\">Info Order</a></td><td><a href=\"logout.php\">LogOut</a></td>
         </tr>
     </table>
 	";

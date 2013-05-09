@@ -33,7 +33,7 @@ $id=$_GET['sku']
     <body>
     <?php
 	$link=koneksiku();
-		$sql="select * from produk where prod_id='$id' limit 1 ";
+		$sql="select * from infoorder limit 1 ";
 		$res=mysql_query($sql,$link);
 		if($res)
 		{
@@ -86,19 +86,17 @@ $id=$_GET['sku']
                 <div id="cover" class="no-cover">
                     <div id="overlay">
                         <div id="overlay-wrapper">
-                            <h1><span id="title"><?php echo $data[prod_nama]; ?></span></h1>
+                            <h1><span id="title">Harga dan Info Order</span></h1>
                             <!--<h2><span id="subtitle">Publié en 1952, le livre, dont la langue éblouissante tient de Rabelais et de Céline, a été un immense succès, avant de tomber dans l’oubli.</span></h2>//-->
                         </div>
                     </div>
                 </div>
+<!-- contentnya disini kakak //-->                
                 <div id="content" class="group">
                     <div id="main-content" class="col span_3_of_4">
-                    <p>
-                    <img style="float:left;margin:0 10px 10px 0;" src="images/produk/<?php echo $data[url]; ?>" >
-                    </p>
-                    <?php /*<h2><span id="subtitle" style="float:right;margin-right:45px;">Price : <?php echo $data[prod_hrg]; ?></span></h2> */?>
-                    <?php echo $data[prod_hrg]; ?>
+                    <?php echo $data[info]; ?>
                     </div>
+                    
                     <div id="side-content" class="col span_1_of_4">
                     <!--
                         <blockquote><i class="icon-quote-left icon-2x pull-left icon-muted"></i>Le docker tatoué, photographié par Doisneau, qui a l’épiderme indolore et se transperce la peau là où vous le lui demandez, contre une tournée ?<i class="icon-quote-right icon-2x pull-right icon-muted"></i></blockquote>

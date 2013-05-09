@@ -184,3 +184,14 @@ visibility:visible;
 .datepicker tbody td.date { cursor: pointer; }
 .datepicker tbody td.date.over { background-color: #99ffff; }
 .datepicker tbody td.date.chosen { font-weight: bold; background-color: #ccffcc; }
+
+.ui-resizable {
+	width:100%;/*420px*/
+}
+
+.edit-table{
+	min-width:550px;
+}
+.edit-table td{
+	vertical-align:top;
+}
