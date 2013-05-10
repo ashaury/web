@@ -134,6 +134,7 @@ function section_f(){
 <img src="http://opi.yahoo.com/online?u=wiratamaprobandung&amp;m=g&amp;t=2" style="margin: 5px; width:150px;" />
                     </div>
                 </div>
+                <div id="copyright">Copyright &copy; 2013 Wiratama Production developed by <a href="http://ashaury.com">ashaury</a></div>
     <?php
 }
 
